@@ -8,7 +8,7 @@ heroImage: "/placeholder-about.jpg"
 
 
 <div class="left-col">
-    <img class="about" src="images/author.png" alt="photo de l'auteur"> 
+    <img class="about" src="../images/author.png" alt="photo de l'auteur"> 
 </div>
 
 <div class="right-col">
