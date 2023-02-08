@@ -6,7 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+	(b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
 
@@ -14,46 +14,39 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			ul {
-				list-style-type: none;
-				padding: unset;
-			}
-			ul li {
-				display: flex;
-			}
-			ul li time {
-				flex: 0 0 130px;
-				font-style: italic;
-				color: #595959;
-			}
-			ul li a:visited {
-				color: #8e32dc;
-			}
-		</style>
 	</head>
 	<body>
+
 		<Header />
+		<div class="wrapper">
 		<main>
-			<section>
-				<ul>
+			<section class="post-list">
 					{
+						
+						
 						posts.map((post) => (
-							<li>
-								<time datetime={post.data.pubDate.toISOString()}>
-									{post.data.pubDate.toLocaleDateString('en-us', {
-										year: 'numeric',
-										month: 'short',
-										day: 'numeric',
-									})}
-								</time>
-								<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-							</li>
+						<a href={`/blog/${post.slug}/`} class="post-link">
+							<div class="post-card" style={post.data.heroImageBkd}>
+								<div class="post-card-details">
+									<p class="post-title">{post.data.title}</p>
+									<p class="post-desc">{post.data.description}</p>
+									<p class="post-date"><time datetime={post.data.pubDate.toISOString()}>
+										{post.data.pubDate.toLocaleDateString('en-us', {
+											year: 'numeric',
+											month: 'short',
+											day: 'numeric',
+										})}
+									</time>
+									</p>
+								
+								</div>
+							</div>
+						</a>
 						))
 					}
-				</ul>
 			</section>
 		</main>
 		<Footer />
+		</div>
 	</body>
 </html>
