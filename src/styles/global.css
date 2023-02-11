@@ -283,6 +283,7 @@ main.others {
 	background-size: 150%;
 	height: 100%;
 	transition: background-size 800ms;
+	margin: 1.5em;
 	
 }
 
