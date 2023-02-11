@@ -1,6 +1,7 @@
 ---
-title: "5 façons de construire votre backlog produit"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+title: "Elaborer un produit ou un service numérique et promouvoir sa sobriété"
+subtitle: "ça vous chargine IT ?"
+description: "Peux-ton travailler dans le domaine du numérique tout en "
 pubDate: "Jul 08 2022"
 heroImage: "/images/post1.jpg"
 ---

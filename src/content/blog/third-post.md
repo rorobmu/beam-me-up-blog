@@ -1,5 +1,6 @@
 ---
 title: "Comment j'ai tué mon boss"
+subtitle: "Comment j'ai tué mon boss"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
 pubDate: "Jul 15 2022"
 heroImage: "/images/post3.jpg"

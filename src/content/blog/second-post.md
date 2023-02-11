@@ -1,5 +1,6 @@
 ---
 title: "Pourquoi vous ne devez pas laisser votre boite mail ouverte"
+subtitle: "Pourquoi vous ne devez pas laisser votre boite mail ouverte"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
 pubDate: "Jul 22 2022"
 heroImage: "/images/post2.jpg"
